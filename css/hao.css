@@ -1,38 +1,4 @@
-/*
 
-垂直置中
-align-items-center
-垂直置頂(預設)
-align-items-start
-垂直置底
-align-items-end
-
-<span class="align-baseline">baseline</span>
-<span class="align-top">top</span>
-<span class="align-middle">middle</span>
-<span class="align-bottom">bottom</span>
-<span class="align-text-top">text-top</span>
-<span class="align-text-bottom">text-bottom</span>
-
-text-center
-<div class="overflow-auto">...</div>
-
-<img src="..." alt="..." class="rounded-circle">
-<img src="..." alt="..." class="rounded-pill">
-<img src="..." alt="..." class="rounded-sm">
-<img src="..." alt="..." class="rounded-lg">
-
-<span style="font-family:serif;">Show serif font</span>				Show serif font
-<span style="font-family:sans-serif;">Show sans-serif font</span>	Show sans-serif font
-<span style="font-family:cursive;">Show cursive font</span>			Show cursive font
-<span style="font-family:fantasy;">Show fantasy font</span>			Show fantasy font
-<span style="font-family:monospace;">monospace font</span>			monospace font
-<span style="font-family:MingLiU;">細明體字型</span>					細明體字型
-<span style="font-family:PMingLiU;">新細明體字型</span>				新細明體字型
-<span style="font-family:DFKai-sb;">標楷體字型</span>				標楷體字型
-<span style="font-family:Microsoft JhengHei;">微軟正黑體</span>		微軟正黑體
-font-family: Arial
-*/
   
 .container-hao{
   /*background-color: rgba(222, 220, 209, 1);*/
@@ -56,7 +22,17 @@ font-family: Arial
   padding: 10px;
 }
 
-
+/* --- commander --- */
+.table-Split6 tr{
+  width: 100%;
+  text-align: center;
+}
+.table-Split6 td{
+  width: 16%;
+}
+.table-Split6 img{
+  width: 100%;
+}
 
 
 
@@ -123,88 +99,4 @@ font-family: Arial
   border:1px solid #6ac13c;
   background:#e9f8df; /*浅绿色背景*/
 }
-.ttt {
-  width: 100%;
-  padding: 10px;
-}
 
-.ttt td{
-  width: 14.2857%;
-  height:36px;
-  line-height:36px;
-  list-style-type:none;
-  display:block;
-  box-sizing:border-box;
-  float:left;
-  text-align:center;
-  font: 1.5em "Arial", bold;
-}
-
-
-
-
-
-
-/*
-
-
-
-#food img{
-  position: relative;
-}
-
-img#food0{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 40%;
-}
-img#food1{
-  position: absolute;
-  left: 40%;
-  top: 25%;
-  width: 20%;
-}
-img#food2{
-  position: absolute;
-  left: 60%;
-  top: 13.33%;
-  width: 20%;
-}
-img#food3{
-  position: absolute;
-  left: 60%;
-  top: 40%;
-  width: 40%;
-}
-img#food4{
-  position: absolute;
-  left: 20%;
-  top: 66.66%;
-  width: 40%;
-}
-img#food5{
-  position: absolute;
-  left: 0px;
-  top: 560px;
-  width: 20%;
-}
-img#food6{
-  position: absolute;
-  left: 480px;
-  top: 480px;
-  width: 20%;
-}
-img#food6{
-  position: absolute;
-  left: 480px;
-  top: 480px;
-  width: 20%;
-}
-img#food6{
-  position: absolute;
-  left: 480px;
-  top: 480px;
-  width: 20%;
-}
-*/
