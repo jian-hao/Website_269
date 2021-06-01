@@ -23,16 +23,26 @@
 }
 
 /* --- commander --- */
+.table-Img img{
+  width: 100%;
+}
+
 .table-Split6 tr{
   width: 100%;
   text-align: center;
 }
 .table-Split6 td{
-  width: 16%;
+  width: 16.6%;
 }
-.table-Split6 img{
+
+.table-Split4 tr{
   width: 100%;
+  text-align: center;
 }
+.table-Split4 td{
+  width: 25%;
+}
+
 
 
 
