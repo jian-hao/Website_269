@@ -52,7 +52,7 @@
 		$calendar_title = "
 			<div class='calendar'>
 				<div class='col-1' id='calendar-prev'>
-					<a href='{$_SERVER['PHP_SELF']}?page=WCT&year={$prev_year}&month={$prev_month}'>
+					<a href='{$_SERVER["PHP_SELF"]}?page=WCT&year={$prev_year}&month={$prev_month}'>
 						<img src='images/calendarPrev.png'>
 					</a>
 				</div>
@@ -60,14 +60,14 @@
 					<h1>{$year}年{$month}月</h1>
 				</div>
 				<div class='col-1' id='calendar-next'>
-					<a href='{$_SERVER['PHP_SELF']}?page=WCT&year={$next_year}&month={$next_month}'>
+					<a href='{$_SERVER["PHP_SELF"]}?page=WCT&year={$next_year}&month={$next_month}'>
 						<img src='images/calendarNext.png'>
 					</a>
 				</div>
 		";
 		$calendar = "
 			$calendar_title
-			<table class='ttt'>
+			<table class='calendar_day_area'>
 				<tr>
 					<td>日</td>
 					<td>一</td>
@@ -93,7 +93,9 @@
 				}
 				$calendar .= "
 				<td class='green'>
-				$show_day
+					<a href='file/wct/{$year}{$month}{$show_day}.docx'>
+						$show_day
+					</a>
 				</td>
 				";
 			}
@@ -105,52 +107,5 @@
 		$calendar .= "</div>";
 		return $calendar;
 	}
-?>
-
-<?php
-/*
-
-	$con = mysqli_connect("localhost", "jianhao", "pass574f5244", "armydb");
-
-	$sql = 'SELECT * FROM `file_list`';
-
-	$rows = mysqli_query($con, $sql); 
-
-	$num = mysqli_num_rows($rows);
-
-	$arr = array("Jellyfish", "Koala", "Penguins", "Lighthouse", "Chrysanthemum", "Desert");
-?>
-
-<div class="container">
-	<?php
-		foreach ($rows as $row) {
-			echo '<div class="mySlides">';
-			echo '<img src="images/'.$row['FileName'].'.jpg" style="width:100%">';
-			echo '</div>';
-		}
-	?>
-
-	<!-- Next and previous buttons -->
-	<a class="prev" onclick="plusSlides(-1)"><</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-	<!-- Image text -->
-	<div class="caption-container">
-		<p id="caption"></p>
-	</div>
-
-	<!-- Thumbnail images -->
-	<div class="row">
-		<?php
-			$i = 0;
-			foreach ($rows as $row) {
-				$i = $i + 1;
-				echo '<div class="column">';
-				echo '<img class="demo" src="images/'.$row['FileName'].'.jpg" style="width:100%" onclick="currentSlide('.$i.')" alt="The Woods">';
-				echo '</div>';
-			}
-		?>
-	</div>
-</div>
-<script src="js/hao.js" type="text/javascript"></script>*/
+	/*<a href='{$_SERVER["HTTP_HOST"]}{$year}{$month}{$j}.docx'>*/
 ?>

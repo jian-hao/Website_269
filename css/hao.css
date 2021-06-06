@@ -1,4 +1,10 @@
 
+.rowtitle{
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  font-family:DFKai-sb;
+}
   
 .container-hao{
   /*background-color: rgba(222, 220, 209, 1);*/
@@ -23,6 +29,15 @@
 }
 
 /* --- commander --- */
+
+.curr_cmd img{
+  width: 30%;
+}
+.curr_cmd p{
+  font-size: 60px;
+  font-weight: bold;
+}
+
 .table-Img img{
   width: 100%;
 }
@@ -30,6 +45,9 @@
 .table-Split6 tr{
   width: 100%;
   text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:DFKai-sb;
 }
 .table-Split6 td{
   width: 16.6%;
@@ -38,10 +56,19 @@
 .table-Split4 tr{
   width: 100%;
   text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:DFKai-sb;
 }
 .table-Split4 td{
   width: 25%;
 }
+
+
+
+
+
+
 
 
 
@@ -57,7 +84,7 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  background-image: url(http://127.0.0.1/Website_269/images/BG_calendar.png);
+  background-image: url(../images/calendarBG.png);
   background-repeat: no-repeat;
   background-size: 720px 420px;
 }
@@ -109,4 +136,19 @@
   border:1px solid #6ac13c;
   background:#e9f8df; /*浅绿色背景*/
 }
+.calendar_day_area {
+  width: 100%;
+  padding: 10px;
+}
 
+.calendar_day_area td{
+  width: 14.285714285714285714285714285714%;
+  height:36px;
+  line-height:36px;
+  list-style-type:none;
+  display:block;
+  box-sizing:border-box;
+  float:left;
+  text-align:center;
+  font: 1.5em "Arial", bold;
+}
