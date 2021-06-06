@@ -1,39 +1,6 @@
-/*
-
-垂直置中
-align-items-center
-垂直置頂(預設)
-align-items-start
-垂直置底
-align-items-end
-
-<span class="align-baseline">baseline</span>
-<span class="align-top">top</span>
-<span class="align-middle">middle</span>
-<span class="align-bottom">bottom</span>
-<span class="align-text-top">text-top</span>
-<span class="align-text-bottom">text-bottom</span>
-
-text-center
-<div class="overflow-auto">...</div>
-
-<img src="..." alt="..." class="rounded-circle">
-<img src="..." alt="..." class="rounded-pill">
-<img src="..." alt="..." class="rounded-sm">
-<img src="..." alt="..." class="rounded-lg">
-
-<span style="font-family:serif;">Show serif font</span>				Show serif font
-<span style="font-family:sans-serif;">Show sans-serif font</span>	Show sans-serif font
-<span style="font-family:cursive;">Show cursive font</span>			Show cursive font
-<span style="font-family:fantasy;">Show fantasy font</span>			Show fantasy font
-<span style="font-family:monospace;">monospace font</span>			monospace font
-<span style="font-family:MingLiU;">細明體字型</span>					細明體字型
-<span style="font-family:PMingLiU;">新細明體字型</span>				新細明體字型
-<span style="font-family:DFKai-sb;">標楷體字型</span>				標楷體字型
-<span style="font-family:Microsoft JhengHei;">微軟正黑體</span>		微軟正黑體
-font-family: Arial
-*/
-  
+.mytable{
+  text-align: center;
+} 
 .container-hao{
   /*background-color: rgba(222, 220, 209, 1);*/
   width: 960px;
