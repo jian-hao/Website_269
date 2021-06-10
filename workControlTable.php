@@ -1,11 +1,4 @@
 <?php
-	$con = mysqli_connect("localhost", "jianhao", "pass574f5244", "armydb");
-	$sql = 'SELECT * FROM `upload_data`';
-	$rows = mysqli_query($con, $sql); 
-?>
-
-<?php
-
 	if(isset($_GET['page']) AND !empty($_GET['page'])){
 		$page = $_GET['page'];
 	}else{
@@ -23,13 +16,10 @@
 		$m = date("m");
 	}
 
-?>
+	echo '<div class="col-9">';
+	echo MakeCalendarModel($y, $m);
+	echo '</div>';
 
-<div class="col-9">
-	<?php echo MakeCalendarModel($y, $m) ?>
-</div>
-
-<?php
 	function MakeCalendarModel($year="", $month=""){
 		//抓取本年年度
 		//if(empty($year))$year=date("Y");
@@ -80,6 +70,16 @@
 
 			
 		";
+
+		$con = mysqli_connect("localhost", "jianhao", "pass574f5244", "armydb");
+		$sql = 'SELECT * FROM `wct`';
+		$datas = mysqli_query($con, $sql); 
+		$arr = array();
+
+		foreach ($datas as $key => $value) {
+			$arr[$value['Date']] = $value['FileName'];
+		}
+
 		$show_day = "";
 		for($i=0; $i<$rows; $i++){
 			$calendar .= "<tr>";
@@ -91,13 +91,23 @@
 				}elseif (!empty($show_day)) {
 					$show_day++;
 				}
-				$calendar .= "
-				<td class='green'>
-					<a href='file/wct/{$year}{$month}{$show_day}.docx'>
-						$show_day
-					</a>
-				</td>
-				";
+				
+				if(isset($arr[$year.'-'.$month.'-'.$show_day])){
+					$calendar .= "
+						<td class='green'>
+							<a href='file/wct/{$arr[$year.'-'.$month.'-'.$show_day]}'>
+								$show_day
+							</a>
+						</td>
+						";
+				}
+				else{
+					$calendar .= "
+						<td class='green'>
+							$show_day
+						</td>
+						";
+				}
 			}
 
 			$calendar .= "</tr>";
