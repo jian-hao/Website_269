@@ -17,7 +17,7 @@
 
 		<link rel="icon" href="images/favicon.ico">
 
-		<title>HAO SHOW</title>
+		<title>陸軍機步第二六九旅</title>
 	</head>
 	<body>
 		<div class="container-hao">

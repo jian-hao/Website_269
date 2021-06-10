@@ -1,6 +1,11 @@
-.mytable{
+
+.rowtitle{
+  font-size: 60px;
+  font-weight: bold;
   text-align: center;
-} 
+  font-family:DFKai-sb;
+}
+  
 .container-hao{
   /*background-color: rgba(222, 220, 209, 1);*/
   width: 960px;
@@ -23,6 +28,62 @@
   padding: 10px;
 }
 
+/* --- commander --- */
+
+.curr_cmd img{
+  width: 30%;
+}
+.curr_cmd p{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.table-Img img{
+  width: 100%;
+}
+
+.table-Split6 tr{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:DFKai-sb;
+}
+.table-Split6 td{
+  width: 16.6%;
+}
+
+
+.table-Split4 tr{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:DFKai-sb;
+}
+.table-Split4 td{
+  width: 25%;
+}
+
+
+.table-Split2 tr{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:DFKai-sb;
+}
+.table-Split2 td{
+  width: 50%;
+}
+
+
+.divsplit5 img{
+  width: 20%;
+}
+
+
+
 
 
 
@@ -38,7 +99,7 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  background-image: url(http://127.0.0.1/269/images/BG_calendar.png);
+  background-image: url(../images/calendarBG.png);
   background-repeat: no-repeat;
   background-size: 720px 420px;
 }
@@ -90,13 +151,13 @@
   border:1px solid #6ac13c;
   background:#e9f8df; /*浅绿色背景*/
 }
-.ttt {
+.calendar_day_area {
   width: 100%;
   padding: 10px;
 }
 
-.ttt td{
-  width: 14.2857%;
+.calendar_day_area td{
+  width: 14.285714285714285714285714285714%;
   height:36px;
   line-height:36px;
   list-style-type:none;
@@ -109,69 +170,155 @@
 
 
 
+/*====Member翻轉特效Start===========================================================*/
+*{
+ margin: 0;
+ padding: 0;
+ -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+}
+.wrapper{
+ width: 100%;
+ margin: 0 auto;
+/* max-width: 80rem;*/
+}
+.cols{
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+ -webkit-box-pack: center;
+     -ms-flex-pack: center;
+         justify-content: center;
+}
+.col{
+ width: calc(25% - 2rem);
+ margin: 1rem;
+ cursor: pointer;
+}
+.container{
+ -webkit-transform-style: preserve-3d;
+         transform-style: preserve-3d;
+ -webkit-perspective: 1000px;
+         perspective: 1000px;
+}
+.front,
+.back{
+ background-size: cover;
+ background-position: center;
+ -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+ transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+ -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+ transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+ transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+ -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
+ text-align: center;
+ height: 400px;
 
-
-
-/*
-
-
-
-#food img{
-  position: relative;
+ border-radius: 10px;
+ color: #fff;
+ font-size: 1.5rem;
+}
+.back{
+ background: #cedce7;
+ background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+ background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+ background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
 }
 
-img#food0{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 40%;
+.front:after{
+ position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   content: '';
+   display: block;
+   opacity: 0.0;/*0透明 1不透明*/
+   background-color: #000;
+   -webkit-backface-visibility: hidden;
+           backface-visibility: hidden;
+   border-radius: 10px;
 }
-img#food1{
-  position: absolute;
-  left: 40%;
-  top: 25%;
-  width: 20%;
+.container:hover .front,
+.container:hover .back{
+   -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+   transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+   -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+   transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+   transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
-img#food2{
-  position: absolute;
-  left: 60%;
-  top: 13.33%;
-  width: 20%;
+.back{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
 }
-img#food3{
-  position: absolute;
-  left: 60%;
-  top: 40%;
-  width: 40%;
+.inner{
+   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+           transform: translateY(-50%) translateZ(60px) scale(0.94);
+   top: 50%;
+   position: absolute;
+   left: 0;
+   width: 100%;
+   padding: 2rem;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+   outline: 1px solid transparent;
+   -webkit-perspective: inherit;
+           perspective: inherit;
+   z-index: 2;
 }
-img#food4{
-  position: absolute;
-  left: 20%;
-  top: 66.66%;
-  width: 40%;
+.container .back{
+   -webkit-transform: rotateY(180deg);
+           transform: rotateY(180deg);
+   -webkit-transform-style: preserve-3d;
+           transform-style: preserve-3d;
 }
-img#food5{
-  position: absolute;
-  left: 0px;
-  top: 560px;
-  width: 20%;
+.container .front{
+   -webkit-transform: rotateY(0deg);
+           transform: rotateY(0deg);
+   -webkit-transform-style: preserve-3d;
+           transform-style: preserve-3d;
 }
-img#food6{
-  position: absolute;
-  left: 480px;
-  top: 480px;
-  width: 20%;
+.container:hover .back{
+ -webkit-transform: rotateY(0deg);
+         transform: rotateY(0deg);
+ -webkit-transform-style: preserve-3d;
+         transform-style: preserve-3d;
 }
-img#food6{
-  position: absolute;
-  left: 480px;
-  top: 480px;
-  width: 20%;
+.container:hover .front{
+ -webkit-transform: rotateY(-180deg);
+         transform: rotateY(-180deg);
+ -webkit-transform-style: preserve-3d;
+         transform-style: preserve-3d;
 }
-img#food6{
-  position: absolute;
-  left: 480px;
-  top: 480px;
-  width: 20%;
+.front .inner span{
+ color: rgba(255,255,255,0.7);
+ font-family: 'Montserrat';
+ font-weight: 300;
 }
-*/
+@media screen and (max-width: 64rem){
+ .col{
+   width: calc(33.333333% - 2rem);
+ }
+}
+@media screen and (max-width: 48rem){
+ .col{
+   width: calc(50% - 2rem);
+ }
+}
+@media screen and (max-width: 32rem){
+ .col{
+   width: 100%;
+   margin: 0 0 2rem 0;
+ }
+}
+.back .inner p{
+  font-size: 18px;
+  font-weight: bold; 
+}
+/*====翻轉特效END===========================================================*/

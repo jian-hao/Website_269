@@ -1,35 +1,34 @@
-<div id="navImg">
-	<a href=<?php echo "{$_SERVER['PHP_SELF']}?page=mysir" ?>>
-		<img src="images/nav_mysir.png"></a>
 
-	<a href=<?php echo "{$_SERVER['PHP_SELF']}?page=history" ?>>
-		<img src="images/nav_history.png"></a>
+					
+<?php
+	if(isset($_GET['page']) AND !empty($_GET['page'])){
+	    $page = $_GET['page'];
+	}else{
+	    $page = "home";
+	}
+	$pageList = array(array('mysir'),
+					array('history'),
+					array('life'),
+					array('owa', 'http://www.google.com'),
+					array('medical', 'http://www.google.com'),
+					array('sports', 'http://www.google.com'),
+					array('announce'),
+					array('plan'),
+					array('WCT'),
+					array('download'),
+					array('link'));
+	echo '<div id="navImg">';
 
-	<a href=<?php echo "{$_SERVER['PHP_SELF']}?page=life" ?>>
-		<img src="images/nav_life.png"></a>
-
-	<a href='http://www.google.com'>
-		<img src="images/nav_owa.png"></a>
-
-	<a href='http://www.google.com'>
-		<img src="images/nav_medical.png"></a>
-
-	<a href='http://www.google.com'>
-		<img src="images/nav_sports.png"></a>
-
-	<a href=<?php echo "{$_SERVER['PHP_SELF']}?page=announce" ?>>
-		<img src="images/nav_announce.png"></a>
-
-	<a href=<?php echo "{$_SERVER['PHP_SELF']}?page=plan" ?>>
-		<img src="images/nav_plan.png"></a>
-
-	<a href=<?php echo "{$_SERVER['PHP_SELF']}?page=WCT" ?>>
-		<img src="images/nav_wct.png"></a>
-
-	<a href=<?php echo "{$_SERVER['PHP_SELF']}?page=download" ?>>
-		<img src="images/nav_download.png"></a>
-
-	<a href=<?php echo "{$_SERVER['PHP_SELF']}?page=link" ?>>
-		<img src="images/nav_link.png"></a>
-</div>
-			
+	for ($i=0; $i<count($pageList); $i++) {
+		if (count($pageList[$i])<2) {
+			echo '<a href='.$_SERVER['PHP_SELF'].'?page='.$pageList[$i][0].'>';
+		}
+		else{
+			echo '<a href='.$pageList[$i][1].'>';
+		}
+		echo '<img src="images/nav_'.$pageList[$i][0].'.png">';
+		echo '</a>';
+	}
+	
+	echo '</div>';
+?>
