@@ -10,7 +10,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="content-language" content="zh-tw" />
-
+		
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css" rel="stylesheet" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/life.css">
+		<script type="text/javascript" async="" src="js/life.js"></script>
 		
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/hao.css">

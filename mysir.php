@@ -64,7 +64,7 @@
 		for ( $j=0 ; $j<2 ; $j++ ) {
 			echo '<div class="col" ontouchstart="this.classList.toggle(\'hover\');">';
 				echo '<div class="container" style="padding:0px">';
-					echo '<div class="front" style="background-image: url(images/'.$datas[$num-$i*2-$j-1]['Name'].'.jpg)">';
+					echo '<div class="front" style="background-image: url(images/'.$datas[$num-$i*2-$j-1]['Name'].'.png)">';
 						echo '<div class="inner"> <span></span></div>';
 					echo '</div>';
 					echo '<div class="back">';
