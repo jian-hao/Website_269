@@ -7,6 +7,7 @@
 	    $page = "home";
 	}
 	$pageList = array(array('mysir'),
+					array('hiscom'),
 					array('history'),
 					array('life'),
 					array('owa', 'http://www.google.com'),

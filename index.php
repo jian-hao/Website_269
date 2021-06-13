@@ -43,6 +43,9 @@
 							case "mysir";
 								include('mysir.php');
 								break;
+							case "hiscom";
+								include('hiscom.php');
+								break;
 							case "history";
 								include('history.php');
 								break;
