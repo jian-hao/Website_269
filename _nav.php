@@ -18,8 +18,8 @@
 					array('WCT'),
 					array('download'),
 					array('link'));
-	echo '<div id="navImg">';
 
+	echo '<div id="navImg">';
 	for ($i=0; $i<count($pageList); $i++) {
 		if (count($pageList[$i])<2) {
 			echo '<a href='.$_SERVER['PHP_SELF'].'?page='.$pageList[$i][0].'>';
@@ -27,9 +27,11 @@
 		else{
 			echo '<a href='.$pageList[$i][1].'>';
 		}
-		echo '<img src="images/nav_'.$pageList[$i][0].'.png">';
+
+		if($pageList[$i][0]==$page){ echo '<img src="images/act_nav_'.$pageList[$i][0].'.png">'; }
+		else{ echo '<img src="images/nav_'.$pageList[$i][0].'.png">'; }	
+
 		echo '</a>';
-	}
-	
+	}	
 	echo '</div>';
 ?>

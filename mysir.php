@@ -7,7 +7,7 @@
 	$rows = mysqli_query($con, $sql); 	
 	foreach($rows as $key =>$row){
 		echo '<tr class="curr_cmd">';
-		echo '<td colspan="4"><img src="images/'.$row['Name'].'.jpg"></br><h3><b>'.$row['Class'].'  '.$row['Name'].'</b></h3></td>';
+		echo '<td colspan="4"><img src="images/'.$row['Name'].'.png"></br><h3><b>'.$row['Class'].'  '.$row['Name'].'</b></h3></td>';
 		echo '</tr>';
 	}
 	$sql = 'SELECT * FROM `muryau`';
