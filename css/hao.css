@@ -1,88 +1,113 @@
 
 .rowtitle{
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  font-family:DFKai-sb;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	font-family:DFKai-sb;
 }
-  
+	
 .container-hao{
-  /*background-color: rgba(222, 220, 209, 1);*/
-  width: 960px;
-  margin-right: auto;
-  margin-left: auto;
+	/*background-color: rgba(222, 220, 209, 1);*/
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /* --- header --- */
 #navImg img{
-  max-width: 240px;
-  padding-left: 5px;
-  padding-right: 5px;
+	max-width: 240px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 #logoImg img{
-  max-width: 960px;
-  padding: 5px;
+	max-width: 960px;
+	padding: 5px;
+  border-radius: 10px;
 }
 #homeImg img{
-  width: 720px;
-  padding: 10px;
+	width: 720px;
+	padding: 10px;
 }
 
 /* --- commander --- */
 
 .curr_cmd img{
-  width: 30%;
+	width: 30%;
 }
 .curr_cmd p{
-  font-size: 60px;
-  font-weight: bold;
+	font-size: 60px;
+	font-weight: bold;
 }
 
 .table-Img img{
-  width: 100%;
+	width: 100%;
 }
 
 .table-Split6 tr{
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  font-family:DFKai-sb;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	font-family:DFKai-sb;
+
 }
 .table-Split6 td{
-  width: 16.6%;
+	width: 16.6%;
 }
 
 
 .table-Split4 tr{
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  font-family:DFKai-sb;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	font-family:DFKai-sb;
 }
 .table-Split4 td{
-  width: 25%;
+	width: 25%;
 }
 
-
+  
 .table-Split2 tr{
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  font-family:DFKai-sb;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	font-family:DFKai-sb;
 }
 .table-Split2 td{
-  width: 50%;
+	width: 50%;
 }
 
 
-.divsplit5 img{
-  width: 20%;
+.divsplit5 { 
+	width: 18%;
+	height: 30px; 
+	margin: 5px;
+	border-radius: 20px;	
+	display: inline-block;
+
+	font-size: 20px;
+	font-family: DFKai-sb; 
+  font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	
+	
+	background-color: rgba(128, 128, 0, 0.5);
+  color: rgba(128, 128, 128, 0.8);
+	transition: 0.5s;
 }
 
-
+.divsplit5:hover {
+	background-color: rgba(100, 50, 0, 0.5);
+  color: rgba(64, 64, 64, 1);
+	cursor: pointer;
+}
+.act {
+  background-color: rgba(100, 50, 0, 0.5);
+  color: rgba(64, 64, 64, 1);
+}
 
 
 
@@ -92,80 +117,81 @@
 
 /* --- calendar --- */
 .calendar{
-  position: relative;
-  width: 720px;
-  height: 420px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  background-image: url(../images/calendarBG.png);
-  background-repeat: no-repeat;
-  background-size: 720px 420px;
+
+	position: relative;
+	width: 720px;
+	height: 420px;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	background-image: url(../images/calendarBG.png);
+	background-repeat: no-repeat;
+	background-size: 720px 420px;
 }
 #calendar-title{
-  height: 80px;
-  padding: 10px;
-  margin-top: 20px;
-  font-family: DFKai-sb;
+	height: 80px;
+	padding: 10px;
+	margin-top: 20px;
+	font-family: DFKai-sb;
 
 }
 
 #calendar-prev img{
-  height: 60px;
-  margin-top: 20px;
-  /*background-image: url(images/calendarPrev.png);*/
+	height: 60px;
+	margin-top: 20px;
+	/*background-image: url(images/calendarPrev.png);*/
 }
 #calendar-next img{
-  height: 60px;
-  margin-top: 20px;
-  /*background-image: url(images/calendarNext.png);*/
+	height: 60px;
+	margin-top: 20px;
+	/*background-image: url(images/calendarNext.png);*/
 }
 .body-list ul{
-  width:100%;
-  text-align: center;
-  font-family:arial;
-  font-weight:bold;
-  font-size:14px;
+	width:100%;
+	text-align: center;
+	font-family:arial;
+	font-weight:bold;
+	font-size:14px;
 }
 .body-list ul li{
-  width:13%;
-  height:36px;
-  line-height:36px;
-  list-style-type:none;
-  display:block;
-  box-sizing:border-box;
-  float:left;
-  text-align:center;
+	width:13%;
+	height:36px;
+	line-height:36px;
+	list-style-type:none;
+	display:block;
+	box-sizing:border-box;
+	float:left;
+	text-align:center;
 }
 .lightgrey{
-  color:#a8a8a8; /*浅灰色*/
+	color:#a8a8a8; /*浅灰色*/
 }
 .darkgrey{
-  color:#565656; /*深灰色*/
+	color:#565656; /*深灰色*/
 }
 .green{
-  color:#6ac13c; /*绿色*/
+	color:#6ac13c; /*绿色*/
 }
 .greenbox{
-  border:1px solid #6ac13c;
-  background:#e9f8df; /*浅绿色背景*/
+	border:1px solid #6ac13c;
+	background:#e9f8df; /*浅绿色背景*/
 }
 .calendar_day_area {
-  width: 100%;
-  padding: 10px;
+	width: 100%;
+	padding: 10px;
 }
 
 .calendar_day_area td{
-  width: 14.285714285714285714285714285714%;
-  height:36px;
-  line-height:36px;
-  list-style-type:none;
-  display:block;
-  box-sizing:border-box;
-  float:left;
-  text-align:center;
-  font: 1.5em "Arial", bold;
+	width: 14.285714285714285714285714285714%;
+	height:36px;
+	line-height:36px;
+	list-style-type:none;
+	display:block;
+	box-sizing:border-box;
+	float:left;
+	text-align:center;
+	font: 1.5em "Arial", bold;
 }
 
 
@@ -175,7 +201,7 @@
  margin: 0;
  padding: 0;
  -webkit-box-sizing: border-box;
-         box-sizing: border-box;
+				 box-sizing: border-box;
 }
 .wrapper{
  width: 100%;
@@ -187,10 +213,10 @@
  display: -ms-flexbox;
  display: flex;
  -ms-flex-wrap: wrap;
-     flex-wrap: wrap;
+		 flex-wrap: wrap;
  -webkit-box-pack: center;
-     -ms-flex-pack: center;
-         justify-content: center;
+		 -ms-flex-pack: center;
+				 justify-content: center;
 }
 .col{
  width: calc(25% - 2rem);
@@ -199,9 +225,9 @@
 }
 .container{
  -webkit-transform-style: preserve-3d;
-         transform-style: preserve-3d;
+				 transform-style: preserve-3d;
  -webkit-perspective: 1000px;
-         perspective: 1000px;
+				 perspective: 1000px;
 }
 .front,
 .back{
@@ -213,7 +239,7 @@
  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
  -webkit-backface-visibility: hidden;
-         backface-visibility: hidden;
+				 backface-visibility: hidden;
  text-align: center;
  height: 400px;
 
@@ -223,78 +249,78 @@
 }
 .back{
  background: #cedce7;
- background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
- background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
- background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+ background: -webkit-linear-gradient(45deg,	#cedce7 0%,#596a72 100%);
+ background: -o-linear-gradient(45deg,	#cedce7 0%,#596a72 100%);
+ background: linear-gradient(45deg,	#cedce7 0%,#596a72 100%);
 }
 
 .front:after{
  position: absolute;
-   top: 0;
-   left: 0;
-   z-index: 1;
-   width: 100%;
-   height: 100%;
-   content: '';
-   display: block;
-   opacity: 0.0;/*0透明 1不透明*/
-   background-color: #000;
-   -webkit-backface-visibility: hidden;
-           backface-visibility: hidden;
-   border-radius: 10px;
+	 top: 0;
+	 left: 0;
+	 z-index: 1;
+	 width: 100%;
+	 height: 100%;
+	 content: '';
+	 display: block;
+	 opacity: 0.0;/*0透明 1不透明*/
+	 background-color: #000;
+	 -webkit-backface-visibility: hidden;
+					 backface-visibility: hidden;
+	 border-radius: 10px;
 }
 .container:hover .front,
 .container:hover .back{
-   -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-   transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-   -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-   transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-   transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	 -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	 transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	 -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	 transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	 transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 .back{
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
 }
 .inner{
-   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-           transform: translateY(-50%) translateZ(60px) scale(0.94);
-   top: 50%;
-   position: absolute;
-   left: 0;
-   width: 100%;
-   padding: 2rem;
-   -webkit-box-sizing: border-box;
-           box-sizing: border-box;
-   outline: 1px solid transparent;
-   -webkit-perspective: inherit;
-           perspective: inherit;
-   z-index: 2;
+	 -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+					 transform: translateY(-50%) translateZ(60px) scale(0.94);
+	 top: 50%;
+	 position: absolute;
+	 left: 0;
+	 width: 100%;
+	 padding: 2rem;
+	 -webkit-box-sizing: border-box;
+					 box-sizing: border-box;
+	 outline: 1px solid transparent;
+	 -webkit-perspective: inherit;
+					 perspective: inherit;
+	 z-index: 2;
 }
 .container .back{
-   -webkit-transform: rotateY(180deg);
-           transform: rotateY(180deg);
-   -webkit-transform-style: preserve-3d;
-           transform-style: preserve-3d;
+	 -webkit-transform: rotateY(180deg);
+					 transform: rotateY(180deg);
+	 -webkit-transform-style: preserve-3d;
+					 transform-style: preserve-3d;
 }
 .container .front{
-   -webkit-transform: rotateY(0deg);
-           transform: rotateY(0deg);
-   -webkit-transform-style: preserve-3d;
-           transform-style: preserve-3d;
+	 -webkit-transform: rotateY(0deg);
+					 transform: rotateY(0deg);
+	 -webkit-transform-style: preserve-3d;
+					 transform-style: preserve-3d;
 }
 .container:hover .back{
  -webkit-transform: rotateY(0deg);
-         transform: rotateY(0deg);
+				 transform: rotateY(0deg);
  -webkit-transform-style: preserve-3d;
-         transform-style: preserve-3d;
+				 transform-style: preserve-3d;
 }
 .container:hover .front{
  -webkit-transform: rotateY(-180deg);
-         transform: rotateY(-180deg);
+				 transform: rotateY(-180deg);
  -webkit-transform-style: preserve-3d;
-         transform-style: preserve-3d;
+				 transform-style: preserve-3d;
 }
 .front .inner span{
  color: rgba(255,255,255,0.7);
@@ -303,22 +329,22 @@
 }
 @media screen and (max-width: 64rem){
  .col{
-   width: calc(33.333333% - 2rem);
+	 width: calc(33.333333% - 2rem);
  }
 }
 @media screen and (max-width: 48rem){
  .col{
-   width: calc(50% - 2rem);
+	 width: calc(50% - 2rem);
  }
 }
 @media screen and (max-width: 32rem){
  .col{
-   width: 100%;
-   margin: 0 0 2rem 0;
+	 width: 100%;
+	 margin: 0 0 2rem 0;
  }
 }
 .back .inner p{
-  font-size: 18px;
-  font-weight: bold; 
+	font-size: 18px;
+	font-weight: bold; 
 }
 /*====翻轉特效END===========================================================*/
